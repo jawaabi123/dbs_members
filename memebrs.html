@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="members.css">
+    <link rel="icon" href="falcon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2 class="logo">IIITDM Alumni Portal</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="file:///C:/Users/Jawahar/about.html#" target="_blank">About Us</a>
+            <a href="file:///C:/Users/Jawahar/memebrs.html#" target="_blank">Members</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+            <button class="btnlogin">Login</button>
+        </nav>
+    </header>
+    <br>
+    <div class="overser">
+      <div class="sear">
+         <input id="seartxt" type="text" placeholder="type here"></input>
+         <button type="submit" id="searbtn" onclick='clear();'><img src="data:image/png;base64,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"></button>
+      </div>
+    </div>
+    <br><br>
+    <div class="links">
+        <h1>Members</h1>
+    </div>
+    <br><br>
+    <div class="lin">
+        <div class="r1">
+            <div class="box">
+               <img src="https://media.licdn.com/dms/image/C5103AQHzq8D-erP5OA/profile-displayphoto-shrink_800_800/0/1554240750025?e=1686787200&v=beta&t=qEWg4X-7rxEQM6ZlajE-2SOQVl0FpLBtkOTnrqLN2A0">
+               <a href="">
+                  <p>Vani Sindura Bodapati</p>
+                  <p>B. Tech - MDM 2008</p>
+               </a>
+            </div>
+            <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/coe09b007.jpeg">
+                <a href="">
+                    <p>S N V V Manik Gode</p>
+                    <p>B. Tech - COE 2009</p>
+                 </a>
+            </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/mdm09b010.jpeg">
+                <a href="">
+                    <p>Sai Srikanth Kuthadi </p>
+                    <p>B. Tech - MDM 2009</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/coe09b008.jpeg">
+                <a href="">
+                    <p>Ilambharathi Kanniah </p>
+                    <p> B. Tech - COE 2009</p>
+                 </a>
+             </div>
+        </div>
+        <div class="r2">
+            <div class="box">
+               <img src="https://iiitdm.ac.in/Profile/images/Profile/edm09b016.jpeg">
+               <a href="">
+                  <p>Thejeswini Batchu, Analyst</p>
+                 <p>B. Tech - EDM 2009</p>
+               </a>
+               
+            </div>
+            <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/mdm09b008.jpeg">
+                <a href="">
+                    <p>Preetham Jonnalagadda</p>
+                <p> B. Tech - MDM 2009</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/mds10m003.jpeg">
+                <a href="">
+                    <p>Sanket Patil </p>
+                    <p> M. Des - MDS 2010</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/coe10b009.jpeg">
+                <a href="">
+                    <p>Naveen Cherupally</p>
+                    <p>B. Tech - COE 2010</p>
+                 </a>
+               
+             </div>
+        </div>
+        <div class="r3">
+            <div class="box">
+               <img src="https://iiitdm.ac.in/Profile/images/Profile/edm10b019.jpeg">
+               <a href="">
+                <p>Spoorthy Macherla</p>
+                <p>B. Tech - EDM 2010</p>
+             </a>
+              
+            </div>
+            <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/MDM11B028.png">
+                <a href="">
+                    <p>Abhishek Arun Yevalkar</p>
+                    <p>B. Tech - MDM 2011</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/EDM11B003.jpeg">
+                <a href="">
+                    <p>Sanjusha Reddy </p>
+                    <p>B. Tech - EDM 2011</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://lh6.googleusercontent.com/-FfpQw69c3Os/AAAAAAAAAAI/AAAAAAAAACo/t9LZsBU3wzI/photo.jpg">
+                <a href="">
+                    <p>Ritesh Meena</p>
+                    <p>B. Tech - MDM 2012</p>
+                 </a>
+                
+             </div>
+        </div>
+        <div class="r4">
+            <div class="box">
+               <img src="https://iiitdm.ac.in/Profile/images/Profile/EDM12B007.jpeg">
+                <a href="">
+                    <p>VENKAT SAI BHARGAV</p>
+                   <p>B. Tech - EDM 2012</p>
+                 </a>
+               
+            </div>
+            <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/COE12B018.jpeg">
+                <a href="">
+                    <p>NITIN VIVEK BHARTI</p>
+                    <p>B. Tech - COE 2012</p>
+                 </a>
+                
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/eds13m002.jpeg">
+                <a href="">
+                    <p>ABHIJIT BALA </p>
+                    <p>M. Des - EDS 2013</p>
+                 </a>
+               
+             </div>
+             <div class="box">
+                <img src="https://iiitdm.ac.in/Profile/images/Profile/mds14m002.jpeg">
+                <a href="">
+                    <p>CHANDRASEKAR E</p>
+                    <p>M. Des - MDS 2014</p>
+                 </a>
+                
+             </div>
+        </div>
+    </div>
+   
+    <div class="container-3">
+        <div class="footer-bg">
+            <div class="quick-links">
+                    <p class="footer-heading">Quick Links</p>
+                    <hr class="h-line">
+                    <div class="footer-space"></div>
+                    <a class = "link" href="#"><span class="footer-links">Home</span></a>
+                    <a class = "link" href="#"><span class="footer-links">About Us</span></a>
+                    <a class = "link" href="#"><span class="footer-links">Members</span></a>
+                    <a class = "link" href="#"><span class="footer-links">Events</span></a>
+                    <a class = "link" href="#"><span class="footer-links">Gallery</span></a>
+            </div>
+            <div class="contact-us">
+                <div class="footer-heading">Contact us</div>
+                <hr class="h-line">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/company/alumni-affairs-iiitdm/" target="_blank"><img class = "footer-icon-1" src="https://accutrainee.com/wp-content/uploads/2017/03/images-linkedin-logo-png-14.png"></a>
+                    <a href="https://instagram.com/alumniaffairsiiitdm?igshid=YmMyMTA2M2Y=" target="_blank"><img class = "footer-icon-2" src = "https://th.bing.com/th/id/OIP.dooR72y5JrnNLeklK5ft3AHaHa?pid=ImgDet&rs=1"></a>
+                    <a href="https://twitter.com/iiitdm_kancheep?lang=en" target="_blank"><img class = "footer-icon-3" src="https://th.bing.com/th/id/R.a34eac9d68791b82d0d5f25b3656aba4?rik=oXFf8u8fl6R9Bg&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2019%2f11%2fTwitter-logo.png&ehk=vI1p%2bl7Q%2fOYqyt6K6KaRzAxSvowlRA%2bDKZl3A%2fftSt0%3d&risl=&pid=ImgRaw&r=0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="members.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
+
+    
+    
